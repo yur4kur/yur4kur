@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @yur4kur
-- 👀 I’m interested in Apple applications development
+- 👀 I’m interested in iOS applications development
 - 🌱 I’m currently learning SwiftUI
 - 💞️ I’m looking to collaborate on Swift coding
 - 📫 How to reach me: via email yur4kur@icloud.com
