@@ -27,6 +27,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showActionSheetButton() {
+        
+        enum Films: String {
+            case film1 = "SpyderMan"
+            case film2 = "Alladin"
+        }
+        
+        let handler:(_ type: Films) -> (UIAlertAction) -> Void = { type in
+            return { action in print(type.rawValue) }
+        }
+        
+        let alert = UIAlertController(title: nil, message: "Choose fiim", preferredStyle: .actionSheet)
+        
+        let film1 = UIAlertAction(title: Films.film1.rawValue, style: .default, handler: handler(.film1))
+        alert.addAction(film1)
+        
+        let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
+        alert.addAction(film2)
+            
+        let cancelAction = UIAlertAction(title: "Discard", style: .cancel)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+        
+        
     }
     
 }
