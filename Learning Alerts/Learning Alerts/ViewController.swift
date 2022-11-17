@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         enum Films: String {
             case film1 = "SpyderMan"
             case film2 = "Alladin"
+            case film3 = "Gentlemen"
         }
         
         let handler:(_ type: Films) -> (UIAlertAction) -> Void = { type in
@@ -44,6 +45,9 @@ class ViewController: UIViewController {
         
         let film2 = UIAlertAction(title: Films.film2.rawValue, style: .default, handler: handler(.film2))
         alert.addAction(film2)
+        
+        let film3 = UIAlertAction(title: Films.film3.rawValue, style: .default, handler: handler(.film3))
+        alert.addAction(film3)
             
         let cancelAction = UIAlertAction(title: "Discard", style: .cancel)
         alert.addAction(cancelAction)
