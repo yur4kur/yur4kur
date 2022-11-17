@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         enum Films: String {
             case film1 = "SpyderMan"
             case film2 = "Alladin"
-            case film3 = "Gentlemen"
+            case film3 = "Heat"
         }
         
         let handler:(_ type: Films) -> (UIAlertAction) -> Void = { type in
