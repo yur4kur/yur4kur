@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Iurii.
 - 👀 I’m interested in iOS applications development
-- 🌱 I’m currently learning SwiftUI
+- 🌱 I’m currently learning Swift frameworks
 - 💞️ I’m looking to collaborate on Swift coding
 - 📫 How to reach me: via email yur4kur@icloud.com
 
